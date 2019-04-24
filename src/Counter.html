@@ -1,4 +1,6 @@
-<button on:click='set({ count: count + 1 })'>count: {count}</button>
+<svelte:options tag="my-counter" />
+
+<button on:click={increment}>count: {count}</button>
 
 <style>
 	button {
@@ -23,13 +25,9 @@
 </style>
 
 <script>
-	export default {
-		tag: 'my-counter',
+	export let count = 0;
 
-		data() {
-			return {
-				count: 0
-			};
-		}
-	};
+	function increment() {
+		count = count + 1;
+	}
 </script>

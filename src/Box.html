@@ -1,5 +1,11 @@
-<p>This is a custom element with slotted shadow DOM content</p>
-<slot></slot>
+<svelte:options tag="my-box" />
+
+<div>
+	<p>This is a custom element with slotted shadow DOM content</p>
+	<slot>
+		<em>no content was provided</em>
+	</slot>
+</div>
 
 <style>
 	:host {
@@ -15,9 +21,3 @@
 		color: blue;
 	}
 </style>
-
-<script>
-	export default {
-		tag: 'my-box'
-	};
-</script>
