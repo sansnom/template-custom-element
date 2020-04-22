@@ -1,5 +1,9 @@
 # svelte app
 
+Try to migrate https://github.com/sveltejs/template-custom-element to Svelte 3.
+
+Original README below:
+
 This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template-custom-element.
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
