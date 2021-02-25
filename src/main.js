@@ -1,3 +1,3 @@
-import './App.html';
+import './App.svelte';
 
-document.body.innerHTML = '<my-app name="world">';
+document.body.innerHTML = '<my-app name="world"></my-app>';

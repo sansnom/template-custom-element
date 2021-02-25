@@ -10,7 +10,7 @@
 <style>
 	:host {
 		border: 1px solid #666;
-		box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+		box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 		display: block;
 		padding: 0.5em 1em;
 		border-radius: 2px;

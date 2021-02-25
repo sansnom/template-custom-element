@@ -15,20 +15,13 @@ export default {
 	},
 	plugins: [
 		svelte({
-			// enable run-time checks when not in production
-			dev: !production,
-
-			customElement: true
+			compilerOptions: {
+				customElement: true
+			},
+			include: 'src/**/*.svelte'
 		}),
-
-		// If you have external dependencies installed from
-		// npm, you'll most likely need these plugins. In
-		// some cases you'll need additional configuration —
-		// consult the documentation for details:
-		// https://github.com/rollup/rollup-plugin-commonjs
 		resolve(),
 		commonjs(),
-
 		production && terser()
 	]
 };
